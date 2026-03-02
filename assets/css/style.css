@@ -10,16 +10,15 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
-  padding: 0;
 }
 
 header {
-  background-color: var(--primary);
-  color: white;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  color: white;
 }
 
 header a {
@@ -29,8 +28,8 @@ header a {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 1rem;
 }
 
