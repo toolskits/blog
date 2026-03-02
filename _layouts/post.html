@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <span>{{ page.date | date: "%B %d, %Y" }}</span> | 
+    <span>Category: <a href="{{ '/categories/' | append: page.categories[0] | relative_url }}">{{ page.categories[0] }}</a></span>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="post-share">
+    <p>Share this post:</p>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}">Twitter</a> |
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a>
+  </div>
+</article>
